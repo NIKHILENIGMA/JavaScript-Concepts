@@ -52,7 +52,6 @@ try {
   console.log(`Converted value 9: ${conversionValue9}`); /// Output: Converted value undefined
   console.log(`Data type is: "${typeof conversionValue9}"`); /// Output: Data type is: "string"
 
-  
   //# Conversion of different datatype to String datatype
   let value10 = 45563; //? Convert number to boolean
   let conversionValue10 = Boolean(value10);
@@ -74,8 +73,7 @@ try {
   console.log(`Converted value 13: ${conversionValue13}`); /// Output: Converted value false
   console.log(`Data type is: "${typeof conversionValue13}"`); /// Output: Data type is: "boolean"
 
-  
-
+  console.log(faalse);
 } catch (error) {
   console.log(`Error message ${error}`);
 }
