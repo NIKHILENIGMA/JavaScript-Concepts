@@ -63,9 +63,37 @@ const user = [
 ];
 
 console.log(user[1].Id);
+///Output: kccZebap
 
 console.log(tinderUser);
+///Output: { Id: 'CT8RBERqcF7A2pdjoQX', name: 'sammy', isLoggedIn: false }
 
 console.log(Object.keys(tinderUser));
+///Output:[ 'Id', 'name', 'isLoggedIn' ]
 // note: Using keys we can collect all the keys and put into the array so we can run loops on it to get access of each key
+
 console.log(Object.values(tinderUser));
+///Output: [ 'CT8RBERqcF7A2pdjoQX', 'sammy', false ]
+
+console.log(Object.entries(tinderUser));
+///Output: [
+///  [ 'Id', 'CT8RBERqcF7A2pdjoQX' ],
+///  [ 'name', 'sammy' ],
+///  [ 'isLoggedIn', false ]
+/// ]
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); ///Output: true
+
+//$ Example
+const course = {
+  coursename: "js in hindi",
+  price: "6666",
+  courseInstructor: "Cecilia"
+} 
+
+const{courseInstructor : instructor} = course 
+//  const {value you want} = from that object
+//note: you can hold a value inside variable from object 
+
+console.log(instructor); ///Output: Cecilia
+
