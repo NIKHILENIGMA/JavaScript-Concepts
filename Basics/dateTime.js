@@ -64,3 +64,29 @@ console.log(timeOnly); /// 00:00:00 GMT+0530 (India Standard Time)
 
 //@ Locale-specific representation 
 console.log(now.toLocaleString()); /// 15/2/2025, 12:00:00 am
+
+//* Timestamps 
+/**
+ *! For the month:
+/// "numeric": Displays the month as a number (1-12).
+/// "2-digit": Displays the month as a two-digit number (01-12).
+/// "narrow": Displays the abbreviated month name (e.g., "J" for January).
+/// "short": Displays the abbreviated month name (e.g., "Jan").
+/// "long": Displays the full month name (e.g., "January").
+
+*! For the day:
+/// "numeric": Displays the day as a number (1-31).
+/// "2-digit": Displays the day as a two-digit number (01-31).
+
+*! For the year:
+/// "numeric": Displays the year as a number (e.g., 2024).
+/// "2-digit": Displays the last two digits of the year (e.g., 24).
+ */
+const timestamp = new Date().getTime()
+let dateFromTimeStamps = new Date(timestamp)
+let monthDay = dateFromTimeStamps.toLocaleDateString('en-IN',{
+    month: "2-digit",
+    day: 'numeric',
+    year: 'numeric',
+}) // convert
+console.log(monthDay)/// 20/04/2024
